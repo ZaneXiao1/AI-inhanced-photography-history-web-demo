@@ -1,5 +1,5 @@
 
-# project Outline
+#  Project Outline
 Photography History: A Cloud-Native, LLM-Driven Pipeline
 - Data Pipeline: Crawled Wikipedia via Python scripts, stored raw data in AWS S3, and used OpenAI API for text summarization before loading into a relational database.
 - Cloud Architecture: Leveraged AWS Lambda for automated QA checks, stored structured data in AWS RDS, and configured GitHub-driven CI/CD deployments through AWS Amplify.
