@@ -1,0 +1,47 @@
+.timeline-intro {
+  padding: 0rem; /* 给这个区域留点内边距 */
+  max-width: 1200px; /* 控制宽度，让它不要太宽 */
+  margin: 0 auto; /* 居中 */
+
+  margin: 2rem;
+}
+
+.timeline-title {
+  font-size: 2.8rem; /* 大字号 */
+  font-weight: 600; /* 粗体 */
+  margin-bottom: 0.5rem; /* 标题下方留白 */
+  margin-top: 4.5rem;
+  letter-spacing: -0.02em;
+}
+
+.timeline-desc {
+  font-size: 1rem; /* 正文大小 */
+  line-height: 1.6; /* 行高，提升可读性 */
+  color: #4b4b4b; /* 文字颜色可自定义 */
+  margin: 0 auto; /* 居中 */
+  font-weight: 700;
+  max-width: 600px;
+  letter-spacing: -0.02em;
+}
+
+.timeline-intro {
+  margin-bottom: 2.5rem; /* 让它与后面列表之间拉开距离 */
+  /* 其他样式 */
+}
+
+.timeline-header {
+  margin-top: 6rem; /* 让整个标题+介绍块往下移动 */
+}
+
+.right-col {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center; /* 容器里文字左对齐 */
+}
+
+.left-col {
+  /* 标题左列 */
+  flex: 0 0 auto; /* or width: 120px */
+  margin-right: 2rem;
+  text-align: center;
+}

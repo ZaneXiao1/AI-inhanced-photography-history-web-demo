@@ -1,0 +1,49 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 让左右两部分并排 */
+  padding: 2rem; /* 上下左右留白，可根据需求调节 */
+}
+
+/* 左侧文字区域 */
+.hero-text {
+  flex: 1;
+  margin-right: 2rem; /* 与右侧图片保持一定间距 */
+  max-width: 40%; /* 或者随你需要，让文字区域不会太宽 */
+}
+
+.hero-text blockquote {
+  font-size: 1.5rem; /* 可以更大些，凸显引语 */
+  font-weight: 500; /* 或者稍微加粗 */
+  line-height: 1.4;
+  quotes: "“" "”" "‘" "’"; /* 可选：让 blockquote 自动加引号 */
+  margin: 0 0 1rem 0; /* 下方留白 */
+}
+
+/* 这只是演示，若想自动插入引号，可用 ::before / ::after 伪元素 */
+.hero-text blockquote::before,
+.hero-text blockquote::after {
+  content: "";
+}
+
+/* 作者名字 */
+.author {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 0.96rem;
+}
+
+/* 右侧图片区域 */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 85%;
+  height: auto;
+  object-fit: cover;
+}

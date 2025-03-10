@@ -1,0 +1,68 @@
+.timeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* 整个 decade-block：左右分两列 */
+.decade-block {
+  display: flex;
+  margin-bottom: 3rem; /* 不同年代间的留白 */
+}
+
+/* 左列：显示一次 1980s */
+.decade-left {
+  width: 24%; /* 或者 15%，看你想多宽 */
+  text-align: left;
+  /* 如果你想它更靠左，就保证 .timeline-container 有 padding，
+       这里就别再加 margin-left 之类，否则会推得更右。 */
+}
+
+.decade-label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* 右侧容器：剩余空间，放多个事件行 */
+.decade-events {
+  flex: 1; /* 占据剩余空间 */
+}
+
+/* 每个事件行：中列 + 右列 */
+.event-row {
+  display: flex;
+  margin-bottom: 2rem; /* 每个事件之间留空间 */
+  border-bottom: 1px solid #ccc; /* 可选分割线 */
+  padding-bottom: 1rem;
+}
+
+/* 中列：事件标题、描述 */
+.timeline-center {
+  width: 40%; /* 你想让它多宽就调这里 */
+  padding-right: 2rem;
+}
+
+.event-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.06em;
+  margin: 0 0 0.25rem 0;
+}
+
+/* 右列：图片 */
+.timeline-right {
+  display: flex;
+  justify-content: flex-end; /* 将子元素（图片）推到右侧 */
+  align-items: flex-start; /* 顶端对齐 */
+  width: 40%;
+}
+
+.timeline-right img {
+  max-width: 80%;
+  height: auto;
+  min-width: 160px;
+  object-fit: cover;
+  display: block;
+  margin: 0; /* 不要额外边距 */
+}
